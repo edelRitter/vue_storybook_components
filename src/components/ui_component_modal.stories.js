@@ -1,12 +1,12 @@
-import uiLogoNav from './ui_component_navigation_logo.vue';
+import uiModalComponent from './ui_component_modal.vue';
 import { action } from '@storybook/addon-actions';
 
 export default {
-  component: uiLogoNav,
+  component: uiModalComponent,
   //👇 Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,
 
-  title: 'Component/ui-LogoNav',
+  title: 'Component/ui-ModalComponent',
 
   //👇 Our events will be mapped in Storybook UI
   argTypes: {
@@ -14,16 +14,16 @@ export default {
 };
 
 const Template = args => ({
-  components: { uiLogoNav },
-  template: '<uiLogoNav v-bind="args" />',
+  components: { uiModalComponent },
+  template: '<uiModalComponent v-bind="args" />',
 });
 
 export const Default = Template.bind({});
 
 Default.args = {
-  logo: {
+  floating: {
     id: '1',
-    title: 'logo_state',
-    state: 'logo_color',
+    title: 'modalComponent',
+    state: 'none',
   },
 };
