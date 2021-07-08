@@ -1,10 +1,10 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <uiFloatingMenu />
+  <div class="ui-content-body">
+
+  </div>
 </template>
 
 <script setup>
-import uiFloatingMenu from './components/ui_component_navigation.vue'
 
 </script>
 
