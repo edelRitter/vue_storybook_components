@@ -1,26 +1,26 @@
 <template>
   <nav
-  id="ui-nav-logo"
+  id="ui-navlogo-logo"
   class="nav-default"
   :class="{ 'nav-white': !colorChange }">
-    <div class="ui-nav-design"><a href="http://edelritter.github.io/portfolio"></a></div>
-    <div class="ui-nav-hamburger">
-      <div class="ui-nav-btn" v-on:click="toggler" v-bind:class="{ 'ui-nav-active' : isActive }">
+    <div class="ui-navlogo-design"><a href="#"></a></div>
+    <div class="ui-navlogo-hamburger">
+      <div class="ui-navlogo-btn" v-on:click="toggler" v-bind:class="{ 'ui-navlogo-active' : isActive }">
         <span></span><span></span><span></span><span></span>
       </div>
     </div>
-    <div class="ui-nav-wrap" v-bind:class="{ 'ui-nav-active' : isActive }">
-      <div class="ui-nav-content">
-        <p class="ui-nav-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-nav-active' : isActive }"><span class="mini_txt">01 </span>/ about</a></p>
-        <p class="ui-nav-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-nav-active' : isActive }"><span class="mini_txt">02 </span>/ works</a></p>
-        <p class="ui-nav-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-nav-active' : isActive }"><span class="mini_txt">03 </span>/ contact</a></p>
+    <div class="ui-navlogo-wrap" v-bind:class="{ 'ui-navlogo-active' : isActive }">
+      <div class="ui-navlogo-content">
+        <p class="ui-navlogo-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-navlogo-active' : isActive }"><span class="mini_txt">01 </span>/ about</a></p>
+        <p class="ui-navlogo-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-navlogo-active' : isActive }"><span class="mini_txt">02 </span>/ works</a></p>
+        <p class="ui-navlogo-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-navlogo-active' : isActive }"><span class="mini_txt">03 </span>/ contact</a></p>
       </div>
       <div class="cnt-social-icn">
         <p><a href="#">icon here</a></p>
         <p><a href="#">icon here</a></p>
       </div>
     </div>
-    <div class="ui-nav-bg" v-bind:class="{ 'ui-nav-active' : isActive }"></div>
+    <div class="ui-navlogo-bg" v-bind:class="{ 'ui-navlogo-active' : isActive }"></div>
   </nav>
 </template>
 
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style scoped>
-#ui-nav-logo {
+#ui-navlogo-logo {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -71,7 +71,7 @@ export default {
 	z-index: 999;
 }
 
-#ui-nav-logo .ui-nav-design {
+#ui-navlogo-logo .ui-navlogo-design {
 	background: url('./assets/img/logo.png') no-repeat;
 	background-size: 114px 18px;
 	width: 114px;
@@ -83,19 +83,19 @@ export default {
 	transition: .25s ease-in-out;
 }
 
-#ui-nav-logo .ui-nav-logo a {
+#ui-navlogo-logo .ui-navlogo-logo a {
 	display: block;
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
 }
 
-#ui-nav-logo #ui-nav-menu {
+#ui-navlogo-logo #ui-navlogo-menu {
 	background: #cccccc;
 	padding: 4px;
 }
 
-.ui-nav-hamburger {
+.ui-navlogo-hamburger {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -104,7 +104,7 @@ export default {
 	padding: 4px;
 }
 
-.ui-nav-hamburger {
+.ui-navlogo-hamburger {
 	width: 44px;
 	height: 40px;
 	padding: 4px;
@@ -120,13 +120,13 @@ export default {
 	z-index: 2;
 }
 
-.ui-nav-hamburger>div {
+.ui-navlogo-hamburger>div {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 
-.ui-nav-hamburger span {
+.ui-navlogo-hamburger span {
 	display: block;
 	position: absolute;
 	height: 1px;
@@ -144,45 +144,45 @@ export default {
 	transition: .25s ease-in-out;
 }
 
-.ui-nav-hamburger span:nth-child(1) {
+.ui-navlogo-hamburger span:nth-child(1) {
 	top: 12px;
 }
 
-.ui-nav-hamburger span:nth-child(2), .ui-nav-hamburger span:nth-child(3) {
+.ui-navlogo-hamburger span:nth-child(2), .ui-navlogo-hamburger span:nth-child(3) {
 	top: 19px;
 }
 
-.ui-nav-hamburger span:nth-child(4) {
+.ui-navlogo-hamburger span:nth-child(4) {
 	top: 26px;
 }
 
-.ui-nav-hamburger .ui-nav-active span:nth-child(1) {
+.ui-navlogo-hamburger .ui-navlogo-active span:nth-child(1) {
 	top: 18px;
 	width: 0%;
 	left: 50%;
 }
 
-.ui-nav-hamburger .ui-nav-active span:nth-child(2) {
+.ui-navlogo-hamburger .ui-navlogo-active span:nth-child(2) {
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
-.ui-nav-hamburger .ui-nav-active span:nth-child(3) {
+.ui-navlogo-hamburger .ui-navlogo-active span:nth-child(3) {
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
-.ui-nav-hamburger .ui-nav-active span:nth-child(4) {
+.ui-navlogo-hamburger .ui-navlogo-active span:nth-child(4) {
 	top: 18px;
 	width: 0%;
 	left: 50%;
 }
 
-.ui-nav-wrap {
+.ui-navlogo-wrap {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -203,7 +203,7 @@ export default {
 	z-index: 1;
 }
 
-.ui-nav-wrap.ui-nav-active {
+.ui-navlogo-wrap.ui-navlogo-active {
 	-webkit-transform: translatex(0);
 	-moz-transform: translatex(0);
 	-ms-transform: translatex(0);
@@ -211,7 +211,7 @@ export default {
 	transform: translatex(0);
 }
 
-.ui-nav-bg {
+.ui-navlogo-bg {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -223,19 +223,19 @@ export default {
 	opacity: 0;
 }
 
-.ui-nav-bg.ui-nav-active {
+.ui-navlogo-bg.ui-navlogo-active {
 	visibility: visible;
 	opacity: 0.5;
 }
 
-.ui-nav-wrap .ui-nav-content {
+.ui-navlogo-wrap .ui-navlogo-content {
 	position: relative;
 	overflow: hidden;
 	text-align: left;
 	padding: 40px 0 20px 0;
 }
 
-.ui-nav-wrap .ui-nav-content .ui-nav-list {
+.ui-navlogo-wrap .ui-navlogo-content .ui-navlogo-list {
 	position: relative;
 	width: 85%;
 	padding: 20px 0;
@@ -245,17 +245,17 @@ export default {
 	border-bottom: 1px solid #333;
 }
 
-.ui-nav-wrap .ui-nav-content .ui-nav-list a {
+.ui-navlogo-wrap .ui-navlogo-content .ui-navlogo-list a {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-.ui-nav-wrap .ui-nav-content .ui-nav-list a:hover {
+.ui-navlogo-wrap .ui-navlogo-content .ui-navlogo-list a:hover {
 	color: #c72e53;
 }
 
-.ui-nav-wrap .ui-nav-content .ui-nav-list a:after {
+.ui-navlogo-wrap .ui-navlogo-content .ui-navlogo-list a:after {
 	content: '';
 	position: absolute;
 	display: block;
@@ -268,36 +268,36 @@ export default {
 	transition: all 1s;
 }
 
-.ui-nav-wrap .ui-nav-content .ui-nav-list a:hover:after {
+.ui-navlogo-wrap .ui-navlogo-content .ui-navlogo-list a:hover:after {
 	width: 100%;
 }
 
-.ui-nav-wrap .ui-nav-content .ui-nav-list span {
+.ui-navlogo-wrap .ui-navlogo-content .ui-navlogo-list span {
 	font-size: 2vw;
 }
 
-.ui-nav-wrap .cnt-social-icn p {
+.ui-navlogo-wrap .cnt-social-icn p {
 	margin: 2% 7%;
 }
 
-#ui-nav-logo.nav-white .ui-nav-logo {
+#ui-navlogo-logo.nav-white .ui-navlogo-logo {
 	background: url('./assets/img/logo_white.png') no-repeat;
 	background-size: 114px 18px;
 }
 
-#ui-nav-logo.nav-white .ui-nav-hamburger span {
+#ui-navlogo-logo.nav-white .ui-navlogo-hamburger span {
 	background: #333333;
 }
 
-#ui-nav-logo.nav-white .ui-nav-hamburger .ui-nav-active span {
+#ui-navlogo-logo.nav-white .ui-navlogo-hamburger .ui-navlogo-active span {
 	background: #333;
 }
 
 @media only screen and (max-width: 620px) {
-	.ui-nav-wrap .ui-nav-content .ui-nav-list span {
+	.ui-navlogo-wrap .ui-navlogo-content .ui-navlogo-list span {
 		font-size: 4vw;
 	}
-	.ui-nav-wrap .cnt-social-icn p {
+	.ui-navlogo-wrap .cnt-social-icn p {
 		margin: 25% auto;
 	}
 }
