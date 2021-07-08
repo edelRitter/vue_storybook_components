@@ -228,10 +228,6 @@ export default {
 	z-index: 99999;
 }
 
-.-floating #ui-menu {
-	top: 0;
-}
-
 #ui-menu-bg {
 	position: fixed;
 	top: 0;

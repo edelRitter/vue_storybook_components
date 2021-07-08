@@ -24,19 +24,55 @@
   </nav>
 </template>
 
+<script>
+export default {
+  name: 'uilogoNav',
+  data: function () {
+    return {
+      isActive: false,
+      colorChange: false,
+      lastScrollPosition: 0
+    }
+  },
+  methods: {
+    toggler: function () {
+      this.isActive = !this.isActive
+    },
+    handleScroll: function () {
+      let currentScrollPosition = window.pageYOffset
+      let sections = document.getElementById('app').getElementsByTagName('section')
+      if ((currentScrollPosition < sections[0].clientHeight || currentScrollPosition > sections[2].offsetTop) && (currentScrollPosition < sections[3].offsetTop)) {
+        this.colorChange = false
+      } else {
+        this.colorChange = true
+      }
+    }
+  },
+  mounted () {
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+}
+</script>
+
 <style scoped>
 #ui-nav-logo {
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 100%;
+	/* 
 	-webkit-animation: slide_in_top 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) both 2s;
 	animation: slide_in_top 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) both 2s;
+	*/
 	z-index: 999;
 }
 
 #ui-nav-logo .ui-nav-design {
-	background: url('./assets/logo.png') no-repeat;
+	background: url('./assets/img/logo.png') no-repeat;
 	background-size: 114px 18px;
 	width: 114px;
 	height: 18px;
@@ -245,7 +281,7 @@
 }
 
 #ui-nav-logo.nav-white .ui-nav-logo {
-	background: url('./assets/logo_white.png') no-repeat;
+	background: url('./assets/img/logo_white.png') no-repeat;
 	background-size: 114px 18px;
 }
 
@@ -292,38 +328,3 @@
 	}
 }
 </style>
-
-<script>
-
-export default {
-  name: 'uilogoNav',
-  data: function () {
-    return {
-      isActive: false,
-      colorChange: false,
-      lastScrollPosition: 0
-    }
-  },
-  methods: {
-    toggler: function () {
-      this.isActive = !this.isActive
-    },
-    handleScroll: function () {
-      let currentScrollPosition = window.pageYOffset
-      let sections = document.getElementById('app').getElementsByTagName('section')
-      if ((currentScrollPosition < sections[0].clientHeight || currentScrollPosition > sections[2].offsetTop) && (currentScrollPosition < sections[3].offsetTop)) {
-        this.colorChange = false
-      } else {
-        this.colorChange = true
-      }
-    }
-  },
-  mounted () {
-    this.lastScrollPosition = window.pageYOffset
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeDestroy () {
-    window.removeEventListener('scroll', this.handleScroll)
-  }
-}
-</script>
