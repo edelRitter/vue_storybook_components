@@ -8,6 +8,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "sass": "^1.35.2",
     "vue": "^3.0.5"
   },
   "devDependencies": {
