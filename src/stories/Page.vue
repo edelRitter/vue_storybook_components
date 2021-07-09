@@ -60,6 +60,7 @@
 
 <script>
 import './page.css';
+import "../styles/ui_all.scss";
 import MyHeader from './Header.vue';
 
 export default {

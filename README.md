@@ -1,4 +1,4 @@
-# vue_storybook_components
+# vue - edelRitter Portfolio & storybook
 
 ## Description
 
@@ -37,6 +37,31 @@ yarn
 2) development via yarn storybook
 ```bash
 yarn storybook
+```
+
+or development via local
+```bash
+yarn run dev
+```
+
+# vue - edelRitter Portfolio
+
+## Description
+
+Portfolio detailing my works using some of the components from storybook via VITE
+
+## Installation
+
+Use the package manager yarn for installation and development.
+
+1) install via yarn
+```bash
+yarn
+```
+
+2) development via yarn vite
+```bash
+yarn vite
 ```
 
 or development via local
