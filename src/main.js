@@ -1,4 +1,4 @@
-import "./styles/ui_all.scss";
+import './styles/ui_all.scss';
 import AOS from 'aos';
 
 import { createApp } from 'vue'
