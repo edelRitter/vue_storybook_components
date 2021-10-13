@@ -41,7 +41,7 @@
 import SvgPathIcon from './app_icon.vue'
 
 export default {
-  name: 'FourthContent',
+  name: 'contact',
   components: {
     SvgPathIcon
   }

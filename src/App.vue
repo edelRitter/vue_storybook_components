@@ -2,30 +2,30 @@
   <div id="edelRitter">
     <uiLoader></uiLoader>
     <uiLogoNav></uiLogoNav>
-    <FirstContent></FirstContent>
-    <SecondContent></SecondContent>
-    <ThirdContent></ThirdContent>
-    <FourthContent></FourthContent>
+    <landing></landing>
+    <information></information>
+    <contents></contents>
+    <contact></contact>
   </div>
 </template>
 
 <script>
 import uiLogoNav from './components/ui_component_navigation_logo.vue'
 import uiLoader from './components/ui_component_loader.vue'
-import FirstContent from './page/content_one.vue'
-import SecondContent from './page/content_two.vue'
-import ThirdContent from './page/content_three.vue'
-import FourthContent from './page/content_four.vue'
+import landing from './page/landing.vue'
+import information from './page/information.vue'
+import contents from './page/contents.vue'
+import contact from './page/contact.vue'
 
 export default {
   name: 'App',
   components: {
     'uiLogoNav': uiLogoNav,
     'uiLoader': uiLoader,
-    'FirstContent': FirstContent,
-    'SecondContent': SecondContent,
-    'ThirdContent': ThirdContent,
-    'FourthContent': FourthContent
+    'landing': landing,
+    'information': information,
+    'contents': contents,
+    'contact': contact
   }
 }
 </script>

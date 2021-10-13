@@ -40,7 +40,7 @@
 import uiModalContent from '../components/ui_component_modal_content.vue'
 
 export default {
-  name: 'ThirdContent',
+  name: 'contents',
   components: {
     uiModalContent
   },

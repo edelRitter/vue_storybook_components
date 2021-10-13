@@ -73,7 +73,7 @@
 import SvgPathIcon from './app_icon.vue'
 
 export default {
-  name: 'SecondContent',
+  name: 'information',
   data () {
     return {
       iconNames: [
