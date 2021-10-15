@@ -1,4 +1,6 @@
 import './styles/ui_all.scss';
+import './page/assets/scss/portfolio.scss';
+
 import AOS from 'aos';
 
 import { createApp } from 'vue'
