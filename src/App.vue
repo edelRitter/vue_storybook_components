@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import uiLogoNav from './components/ui_component_navigation_logo.vue'
-import uiLoader from './components/ui_component_loader.vue'
-import landing from './page/landing.vue'
-import information from './page/information.vue'
-import contents from './page/contents.vue'
-import contact from './page/contact.vue'
+import uiLogoNav from './stories/components/ui_component_navigation_logo.vue'
+import uiLoader from './stories/components/ui_component_loader.vue'
+import landing from './portfolio/landing.vue'
+import information from './portfolio/information.vue'
+import contents from './portfolio/contents.vue'
+import contact from './portfolio/contact.vue'
 
 export default {
   name: 'App',

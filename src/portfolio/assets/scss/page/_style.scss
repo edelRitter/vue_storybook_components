@@ -1,0 +1,279 @@
+#main-title {
+  position: relative;
+  overflow: hidden;
+
+  .title-hero {
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+
+    & video {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .title-caption {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 16px;
+    font-size: 9vw;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+
+    @media #{$small-and-up} {
+      width: 75%;
+      font-size: 52px;
+    }
+  }
+}
+
+#main-information {
+  box-sizing: border-box;
+  width: 100%;
+
+  .content-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    @media #{$small-and-up} {
+      flex-direction: row;
+    }
+
+    .content-boxes {
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      width: 100%;
+
+      @media #{$small-and-up} {
+        width: 50%;
+      }
+
+      &.biography {
+        padding: 80px 16px;
+        background: #f4f4f4;
+      }
+
+      &.social {
+        padding: 0 0 80px 0;
+      }
+
+      .content-biographytxt {
+        letter-spacing: 0.2em;
+        font-size: 5vw;
+        font-family: 'Playfair Display', serif;
+
+        @media #{$small-and-up} {
+          font-size: 24px;
+        }
+      }
+
+      .content-biographydesc {
+        margin: 40px 0 0 0;
+        line-height: 1.8em;
+        font-size: 3.6vw;
+
+        @media #{$small-and-up} {
+          margin: 80px 0 0 0;
+          font-size: 16px;
+        }
+      }
+
+      .content-biography-loves {
+        display: flex;
+        align-items: baseline;
+        margin: 40px 0 0 0;
+        line-height: 1.8em;
+
+        p {
+          width: 80%;
+          font-size: 3.6vw;
+
+          @media #{$small-and-up} {
+            font-size: 16px;
+          }
+
+          &:first-child {
+            width: 20%;
+            font-size: 4vw;
+            font-family: 'Oswald', 'arial', serif;
+
+            @media #{$small-and-up} {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  & .bdr {
+    clear: both;
+    position: relative;
+    width: 10%;
+    height: 1px;
+    margin: 80px auto;
+    background: #333;
+  }
+
+  & .content-social-wrap {
+    position: relative;
+
+    & .content-social-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .content-social-icn {
+        margin: 0 16px;
+      }
+    }
+  }
+}
+
+#main-portfolio {
+  position: relative;
+  position: relative;
+  width: 100%;
+  color: #fff;
+  background: #333;
+  z-index: 3;
+
+  .select-work {
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 16px;
+
+    @media #{$small-and-up} {
+      padding: 80px 16px;
+    }
+
+    span {
+      font-size: 5vw;
+      letter-spacing: 0.4em;
+      font-family: 'Oswald', 'arial', serif;
+
+      @media #{$small-and-up} {
+        font-size: 24px;
+      }
+    }
+  }
+
+  & .content-project {
+
+    & video {
+      position: relative;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+    }
+
+    & .swiper {
+      width: 100%;
+      height: 100%;
+      max-height: 75vh;
+    }
+  
+    & .swiper-slide {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: transparent;
+      overflow: hidden;
+  
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    & .swiper-pagination {
+      bottom: 0;
+
+      & span {
+        background: #fff;
+
+        &.active {
+
+        }
+      }
+    }
+
+    & .swiper-button-prev,
+    & .swiper-button-next {
+      display: none;
+    }
+  }
+}
+
+#main-contact {
+  position: relative;
+
+  .content-contact-txt {
+    clear: both;
+    margin: 0 auto;
+    padding: 80px 0;
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+    @media #{$small-and-up} {
+      font-size: 24px;
+    }
+  }
+
+  .content-contact-sns {
+    clear: both;
+    display: flex;
+    width: 50%;
+    margin: 20px auto;
+    align-items: stretch;
+    justify-content: center;
+    font-family: 'Oswald', 'arial', serif;
+  }
+
+  .content-contact-wrap {
+    margin: 0 auto;
+
+    .cnt-social-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 80px;
+
+      .cnt-social-icn p {
+        margin: 0 16px;
+      }
+    }
+  }
+
+  .copyright {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+}
