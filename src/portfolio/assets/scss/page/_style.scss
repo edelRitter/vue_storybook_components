@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  .title-hero {
+  & .title-hero {
     position: relative;
     width: 100%;
     min-height: 75vh;
@@ -17,7 +17,7 @@
     }
   }
 
-  .title-caption {
+  & .title-caption {
     position: absolute;
     box-sizing: border-box;
     top: 50%;
@@ -33,6 +33,26 @@
     @media #{$small-and-up} {
       width: 75%;
       font-size: 52px;
+    }
+  }
+
+  & .title-logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 25vh;
+    background: url('./src/portfolio/assets/img/logo_design.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 1;
+
+    @media #{$small-and-up} {
+      height: 50vh;
+      width: 25%;
     }
   }
 }
@@ -215,10 +235,6 @@
 
       & span {
         background: #fff;
-
-        &.active {
-
-        }
       }
     }
 
