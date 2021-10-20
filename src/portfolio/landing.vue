@@ -11,7 +11,11 @@
       data-aos-duration="800"
       data-aos-delay="2400"
       data-aos-once="true">
-        <span>/ welcome </span><span>/ to </span><span>/ the /</span><br /><span>/ ROUND </span><span>/ TABLE /</span>
+        <span>/ welcome </span>
+        <span>/ to </span>
+        <span>/ the /</span><br>
+        <span>/ ROUND </span>
+        <span>/ TABLE /</span>
       </div>
       <div class="portfolio-logo"></div>
   </section>

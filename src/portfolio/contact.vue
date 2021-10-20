@@ -4,7 +4,7 @@
     <p class="common-text__title">/ portfolio-contact</p>
     </div>
     <div class="portfolio-contact__sns">
-      <div class="sns-txt">
+      <div class="portfolio-contact__sns-text">
         <p class="common-text__title"><img src="./assets/img/logo.png" width="100%"></p>
         <div class="portfolio-contact__wrap">
         <div class="ui-social-flex">

@@ -33,7 +33,7 @@
                 0
               ]
             }
-          }' class="swiper-content-one">
+          }' class="portfolio-project__swiper">
           <swiper-slide>
             <p><img src="./assets/img/teamlabo/labo_2.png"></p>
           </swiper-slide>
@@ -75,7 +75,7 @@
                 0
               ]
             }
-          }' class="swiper-content-one">
+          }' class="portfolio-project__swiper">
           <swiper-slide>
             <video loop muted autoplay class="fullscreen-bg__video">
               <source src="./assets/img/teamlabo/labo.webm" type="video/webm">
@@ -100,7 +100,7 @@
           :pagination='{
             "clickable": true
           }' 
-          class="mySwiper">
+          class="portfolio-project__swiper">
           <swiper-slide>Slide 1</swiper-slide>
           <swiper-slide>Slide 2</swiper-slide>
           <swiper-slide>Slide 3</swiper-slide>
