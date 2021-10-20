@@ -1,88 +1,93 @@
-.nav-default {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 999;
-
-  & .ui-navlogo-design {
-    background: url('../src/portfolio/assets/img/logo.png') no-repeat;
-    background-size: 114px 18px;
-    width: 114px;
-    height: 18px;
-    margin: 11px 0 11px 2%;
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-  }
-}
-
-.nav-white {
-  & .ui-navlogo-design {
-    background: url('./src/portfolio/assets/img/logo_white.png') no-repeat;
-    background-size: 114px 18px;
-  }
-
-  & .ui-navlogo-hamburger span {
-    background: #ffffff;
-  }
-}
-
-.cnt-social-icn p {
-  position: relative;
-  overflow: hidden;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-    width: 0;
-    height: 30px;
-    border: 30px solid transparent;
-    border-bottom-color: #333;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 30px;
-    width: 0;
-    height: 30px;
-    border: 30px solid transparent;
-    border-top-color: #333;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  &:hover {
-    &:before, &:after {
-      border-bottom-color: #c72e53;
-      border-top-color: #c72e53;
+#ui-navlogo {
+  &.ui-nav__default {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+  
+    & .ui-navlogo-design {
+      background: url('../src/portfolio/assets/img/logo.png') no-repeat;
+      background-size: 114px 18px;
+      width: 114px;
+      height: 18px;
+      margin: 11px 0 11px 2%;
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
     }
   }
+  
+  &.ui-nav__white {
+    & .ui-navlogo-design {
+      background: url('./src/portfolio/assets/img/logo_white.png') no-repeat;
+      background-size: 114px 18px;
+    }
+  }
+}
 
-  & a {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
+.ui-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & p {
+    position: relative;
+    overflow: hidden;
     width: 60px;
     height: 60px;
-  }
-
-  & svg {
-    position: relative;
-    margin: 18px 0px 0 18px;
-    fill: #fff;
-    z-index: 2;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      width: 0;
+      height: 30px;
+      border: 30px solid transparent;
+      border-bottom-color: #333;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 30px;
+      width: 0;
+      height: 30px;
+      border: 30px solid transparent;
+      border-top-color: #333;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    &:hover {
+      &:before, &:after {
+        border-bottom-color: #c72e53;
+        border-top-color: #c72e53;
+      }
+    }
+  
+    & a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+    }
+  
+    & svg {
+      position: relative;
+      margin: 18px 0px 0 18px;
+      fill: #fff;
+      z-index: 2;
+    }
   }
 }

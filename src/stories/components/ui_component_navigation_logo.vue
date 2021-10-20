@@ -1,8 +1,8 @@
 <template>
   <nav
-  id="ui-navlogo-logo"
-  class="nav-default"
-  :class="{ 'nav-white': !colorChange }">
+  id="ui-navlogo"
+  class="ui-nav__default"
+  :class="{ 'ui-nav__white': !colorChange }">
     <div class="ui-navlogo-design"><a href="#"></a></div>
     <div class="ui-navlogo-hamburger">
       <div class="ui-navlogo-btn" v-on:click="toggler" v-bind:class="{ 'ui-navlogo-active' : isActive }">
@@ -15,9 +15,9 @@
         <p class="ui-navlogo-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-navlogo-active' : isActive }"><span class="mini_txt">02 </span>/ works</a></p>
         <p class="ui-navlogo-list"><a href="#" v-on:click="toggler" v-bind:class="{ 'ui-navlogo-active' : isActive }"><span class="mini_txt">03 </span>/ contact</a></p>
       </div>
-      <div class="cnt-social-icn">
-        <p><a href="#">icon here</a></p>
-        <p><a href="#">icon here</a></p>
+      <div class="ui-social-icon">
+        <p><a href="#"><SvgPathIcon name="twitter_icon" /></a></p>
+        <p><a href="#"><SvgPathIcon name="github_icon" /></a></p>
       </div>
     </div>
     <div class="ui-navlogo-bg" v-bind:class="{ 'ui-navlogo-active' : isActive }"></div>
@@ -25,13 +25,19 @@
 </template>
 
 <script>
+import SvgPathIcon from '/src/stories/components/ui_icon.vue'
+
 export default {
   name: 'uiLogoNav',
   data: function () {
     return {
       isActive: false,
       colorChange: false,
-      lastScrollPosition: 0
+      lastScrollPosition: 0,
+      iconNames: [
+        'twitter_icon',
+        'facebook_icon'
+      ]
     }
   },
   methods: {
@@ -54,6 +60,9 @@ export default {
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.handleScroll)
-  }
+  },
+  components: {
+    SvgPathIcon,
+  },
 }
 </script>

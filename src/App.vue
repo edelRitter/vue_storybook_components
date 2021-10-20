@@ -10,12 +10,13 @@
 </template>
 
 <script>
-import uiLogoNav from './stories/components/ui_component_navigation_logo.vue'
-import uiLoader from './stories/components/ui_component_loader.vue'
-import landing from './portfolio/landing.vue'
-import information from './portfolio/information.vue'
-import contents from './portfolio/contents.vue'
-import contact from './portfolio/contact.vue'
+import uiLogoNav from '/src/stories/components/ui_component_navigation_logo.vue'
+import uiLoader from '/src/stories/components/ui_component_loader.vue'
+
+import landing from '/src/portfolio/landing.vue'
+import information from '/src/portfolio/information.vue'
+import contents from '/src/portfolio/contents.vue'
+import contact from '/src/portfolio/contact.vue'
 
 export default {
   name: 'App',
@@ -39,8 +40,8 @@ export default {
     font-style: normal;
     font-weight: 400;
     font-display: auto;
-    src: url(../fonts/fa/fa-regular-400.eot);
-    src: url(../fonts/fa/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../fonts/fa/fa-regular-400.woff2) format("woff2"), url(../fonts/fa/fa-regular-400.woff) format("woff"), url(../fonts/fa/fa-regular-400.ttf) format("truetype"), url(../fonts/fa/fa-regular-400.svg#fontawesome) format("svg")
+    src: url(./src/fonts/fa/fa-regular-400.eot);
+    src: url(./src/fonts/fa/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(./src/fonts/fa/fa-regular-400.woff2) format("woff2"), url(./src/fonts/fa/fa-regular-400.woff) format("woff"), url(./src/fonts/fa/fa-regular-400.ttf) format("truetype"), url(./src/fonts/fa/fa-regular-400.svg#fontawesome) format("svg")
 }
 
 #app {

@@ -1,12 +1,17 @@
 <template>
   <section id="main-portfolio">
-    <div class="content-project">
-      <div class="content-project__one">
-        <p class="select-work"><span class="fnt-ttl">/</span><span class="fnt-ttl">2021<br />team labo video</span></p>
-        <video loop muted autoplay class="fullscreen-bg__video">
-          <source src="./assets/img/teamlabo/labo.webm" type="video/webm">
-        </video>
-        <p class="select-work"><span class="fnt-ttl">/</span><span class="fnt-ttl">2021<br />team labo photography</span></p>
+    <div class="portfolio-project">
+      <div class="portfolio-project__one">
+        <h2>
+          HELLO / I / AM /<br>
+          <span>DEVELOPER &#38; DESIGNER</span>
+        </h2>
+      </div>
+      <div class="portfolio-project__two">
+        <p class="portfolio-project__header">
+          <span class="portfolio-project__title">/</span>
+          <span class="portfolio-project__title">2021<br />team labo photography</span>
+        </p>
         <swiper
           :grabCursor="true"
           :effect="'creative'"
@@ -45,9 +50,49 @@
             <p><img src="./assets/img/teamlabo/labo_5.png"></p>
           </swiper-slide>
         </swiper>
+        <div class="portfolio-project__desc">
+          <p class="portfolio-project__desc-ttl">This is a set of photgraphy taken by me at test</p>
+          <p></p>
+        </div>
+        <swiper
+          :grabCursor="true"
+          :effect="'creative'"
+          :pagination="true"
+          :autoHeight="true"
+          :creativeEffect='{
+            "prev": {
+              "shadow": true,
+              "translate": [
+                0,
+                0,
+                -400
+              ]
+            },
+            "next": {
+              "translate": [
+                "100%",
+                0,
+                0
+              ]
+            }
+          }' class="swiper-content-one">
+          <swiper-slide>
+            <video loop muted autoplay class="fullscreen-bg__video">
+              <source src="./assets/img/teamlabo/labo.webm" type="video/webm">
+            </video>
+          </swiper-slide>
+          <swiper-slide>
+            <video loop muted autoplay class="fullscreen-bg__video">
+          <source src="./assets/img/teamlabo/main_bg.webm" type="video/webm">
+        </video>
+          </swiper-slide>
+        </swiper>
       </div>
-      <div class="content-project__two">
-        <p class="select-work"><span class="fnt-ttl">/</span><span class="fnt-ttl">selected<br />content-project</span></p>
+      <div class="portfolio-project__three">
+        <p class="portfolio-project__header">
+          <span class="portfolio-project__title">/</span>
+          <span class="portfolio-project__title">2021<br />team labo photography</span>
+        </p>
         <swiper 
           :slidesPerView="1"
           :autoHeight="true"
@@ -59,9 +104,6 @@
           <swiper-slide>Slide 1</swiper-slide>
           <swiper-slide>Slide 2</swiper-slide>
           <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide>
-          <swiper-slide>Slide 5</swiper-slide>
-          <swiper-slide>Slide 6</swiper-slide>
         </swiper>
       </div>
     </div>
@@ -69,10 +111,9 @@
 </template>
 
 <script>
-import uiModalContent from '../stories/components/ui_component_modal_content.vue'
-
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import SwiperCore, { Navigation, Pagination, EffectCreative } from 'swiper';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -85,7 +126,6 @@ export default {
   components: {
 		Swiper,
     SwiperSlide,
-    uiModalContent,
   },
 }
 </script>

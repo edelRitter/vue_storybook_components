@@ -1,33 +1,26 @@
 <template>
   <section id="main-contact">
-    <div class="content-contact-txt">
-    <p class="fnt-ttl">/ content-contact</p>
+    <div class="portfolio-contact__txt">
+    <p class="common-text__title">/ portfolio-contact</p>
     </div>
-    <div class="content-contact-sns">
+    <div class="portfolio-contact__sns">
       <div class="sns-txt">
-        <p class="fnt-ttl"><img src="./assets/img/logo.png" width="100%"></p>
-        <div class="content-contact-wrap">
-        <div class="cnt-social-flex">
+        <p class="common-text__title"><img src="./assets/img/logo.png" width="100%"></p>
+        <div class="portfolio-contact__wrap">
+        <div class="ui-social-flex">
           <div
-          class="cnt-social-icn"
+          class="ui-social-icon"
           data-aos="zoom-in"
           data-aos-duration="800"
           data-aos-delay="300">
             <p class="twitter"><a href="#"><SvgPathIcon name="twitter_icon" /></a></p>
           </div>
           <div
-          class="cnt-social-icn"
+          class="ui-social-icon"
           data-aos="zoom-in"
           data-aos-duration="800"
           data-aos-delay="300">
             <p class="facebook"><a href="https://github.com/edelRitter"><SvgPathIcon name="github_icon" /></a></p>
-          </div>
-          <div
-          class="cnt-social-icn"
-          data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="300">
-            <p class="mail"><a href="#"><SvgPathIcon name="mail_icon" /></a></p>
           </div>
         </div>
       </div>
@@ -38,10 +31,18 @@
 </template>
 
 <script>
-import SvgPathIcon from './app_icon.vue'
+import SvgPathIcon from '/src/stories/components/ui_icon.vue'
 
 export default {
   name: 'contact',
+  data () {
+    return {
+      iconNames: [
+        'twitter_icon',
+        'github_icon'
+      ]
+    }
+  },
   components: {
     SvgPathIcon
   }
