@@ -59,6 +59,8 @@
 </template>
 
 <script>
+import './assets/scss/_reset.scss'
+import './assets/scss/ui_icons.scss'
 import './page.css';
 import MyHeader from './Header.vue';
 
