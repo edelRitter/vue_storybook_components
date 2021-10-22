@@ -1,9 +1,14 @@
+import { createApp } from 'vue'
+import Vue from 'vue'
+import App from './App.vue'
+import AOS from 'aos'
+import VueParallaxJs from 'vue-parallax-js'
+
 import './stories/assets/scss/ui_all.scss';
 import './portfolio/assets/scss/_portfolio.scss';
 
-import AOS from 'aos';
-import { createApp } from 'vue'
-import App from './App.vue'
-
+const portfolio = createApp(App);
 AOS.init();
-createApp(App).mount('#app')
+Vue.use(VueParallaxJs);
+
+portfolio.mount('#app')

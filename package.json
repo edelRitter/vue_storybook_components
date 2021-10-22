@@ -8,10 +8,12 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@vue/cli-service": "^4.5.14",
     "aos": "^2.3.4",
     "sass": "^1.43.2",
     "swiper": "^7.0.8",
-    "vue": "^3.0.5"
+    "vue": "^2.6.14",
+    "vue-parallax-js": "^0.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",

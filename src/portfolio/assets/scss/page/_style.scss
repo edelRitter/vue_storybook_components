@@ -2,7 +2,6 @@
   color:#c72e53;
 }
 
-
 #main-title {
   position: relative;
   overflow: hidden;
@@ -201,10 +200,10 @@
     }
   }
 
-  & .portfolio-project__one {
+  & .portfolio-project__parallax {
     position: relative;
+    min-height: 100vh;
     width: 100%;
-    padding: 80px 0;
 
     & h2 {
       padding: 0 16px;
