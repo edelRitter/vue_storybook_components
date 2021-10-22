@@ -6,8 +6,9 @@ import VueParallaxJs from 'vue-parallax-js'
 
 import './stories/assets/scss/ui_all.scss';
 import './portfolio/assets/scss/_portfolio.scss';
+import router from './router'
 
-const portfolio = createApp(App);
+const portfolio = createApp(App).use(router);
 AOS.init();
 Vue.use(VueParallaxJs);
 
