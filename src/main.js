@@ -6,6 +6,6 @@ import App from './App.vue'
 import AOS from 'aos'
 
 AOS.init();
-const app = createApp(App)
+const app = createApp(App);
 
-app.mount('#app')
+app.mount('#app');

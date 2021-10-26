@@ -1,13 +1,11 @@
 <template>
   <section id="main-portfolio">
-    <div class="portfolio-project">
+    <div class="portfolio-project">      
       <div class="portfolio-project__parallax">
-        <scroll-y-parallax>
         <h2>
           HELLO / I / AM /<br>
           <span>DEVELOPER &#38; DESIGNER</span>
         </h2>
-        </scroll-y-parallax>
       </div>
       <div class="portfolio-project__two">
         <p class="portfolio-project__header">
