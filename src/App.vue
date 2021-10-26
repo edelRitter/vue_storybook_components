@@ -32,12 +32,19 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap');
+
 @font-face {
     font-style: normal;
     font-weight: 400;
     font-display: auto;
     src: url(../fonts/fa/fa-regular-400.eot);
-    src: url(../fonts/fa/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../fonts/fa/fa-regular-400.woff2) format("woff2"), url(../fonts/fa/fa-regular-400.woff) format("woff"), url(../fonts/fa/fa-regular-400.ttf) format("truetype"), url(../fonts/fa/fa-regular-400.svg#fontawesome) format("svg")
+    src:
+    url(../fonts/fa/fa-regular-400.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/fa/fa-regular-400.woff2) format("woff2"),
+    url(../fonts/fa/fa-regular-400.woff) format("woff"),
+    url(../fonts/fa/fa-regular-400.ttf) format("truetype"),
+    url(../fonts/fa/fa-regular-400.svg#fontawesome) format("svg")
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

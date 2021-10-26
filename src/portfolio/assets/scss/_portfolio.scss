@@ -1,7 +1,8 @@
 // common ui
-@import './src/stories/assets/scss/ui_all.scss';
+@import './src/stories/assets/scss/ui_all';
 
 // all pages
-@import './reset';
-@import './page/_style.scss';
-@import './page/_component-style.scss';
+@import './_reset';
+@import './_color';
+@import './page/_style';
+@import './page/_component-style';
