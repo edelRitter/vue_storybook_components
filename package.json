@@ -1,5 +1,9 @@
 {
-  "version": "0.0.0",
+  "name": "newcar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/edelRitter/vue_storybook_components.git",
+  "license": "MIT",
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
@@ -10,6 +14,9 @@
   "dependencies": {
     "@vue/cli-service": "^4.5.14",
     "aos": "^2.3.4",
+    "eslint": "^8.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "lint-staged": "^11.2.6",
     "sass": "^1.43.2",
     "swiper": "^7.0.8",
     "vue": "^3.0.0-beta.1",
@@ -32,5 +39,11 @@
     "vite": "^2.3.7",
     "vue-cli-plugin-vue-next": "~0.1.4",
     "vue-loader": "^16.2.0"
-  }
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "eslintIgnore": [
+    "public/"
+  ]
 }

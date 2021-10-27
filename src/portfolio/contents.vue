@@ -22,31 +22,15 @@
       <div class="portfolio-project__two">
         <p class="portfolio-project__header">
           <span class="portfolio-project__title">/</span>
-          <span class="portfolio-project__title">swipe<br />to see gallery</span>
+          <span class="portfolio-project__title">swipe right<br />to see more</span>
         </p>
         <swiper
-          :grabCursor="true"
-          :effect="'creative'"
-          :pagination="true"
-          :slideToClickedSlide="true"
           :autoHeight="true"
-          :creativeEffect='{
-            "prev": {
-              "shadow": true,
-              "translate": [
-                0,
-                0,
-                -400
-              ]
-            },
-            "next": {
-              "translate": [
-                "100%",
-                0,
-                0
-              ]
-            }
-          }' class="portfolio-project__swiper">
+          :navigation="true"
+          :pagination='{
+            "clickable": true
+          }'
+          class="portfolio-project__swiper">
           <swiper-slide>
             <p><img src="./assets/img/teamlabo/labo_2.png"></p>
           </swiper-slide>
@@ -69,39 +53,6 @@
           <p></p>
         </div>
 
-        <swiper
-          :grabCursor="true"
-          :effect="'creative'"
-          :pagination="true"
-          :autoHeight="true"
-          :creativeEffect='{
-            "prev": {
-              "shadow": true,
-              "translate": [
-                0,
-                0,
-                -400
-              ]
-            },
-            "next": {
-              "translate": [
-                "100%",
-                0,
-                0
-              ]
-            }
-          }' class="portfolio-project__swiper">
-          <swiper-slide>
-            <video loop muted autoplay class="fullscreen-bg__video">
-              <source src="./assets/img/teamlabo/labo.webm" type="video/webm">
-            </video>
-          </swiper-slide>
-          <swiper-slide>
-            <video loop muted autoplay class="fullscreen-bg__video">
-          <source src="./assets/img/teamlabo/main_bg.webm" type="video/webm">
-        </video>
-          </swiper-slide>
-        </swiper>
       </div>
     </div>
   </section>
@@ -109,14 +60,13 @@
 
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import SwiperCore, { Navigation, Pagination, EffectCreative } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 
 import 'swiper/css';
+import "swiper/css/navigation"
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import "swiper/css/effect-creative"
 
-SwiperCore.use([ Navigation, Pagination, EffectCreative ]);
+SwiperCore.use([ Navigation, Pagination ]);
 
 export default {
   name: 'contents',
