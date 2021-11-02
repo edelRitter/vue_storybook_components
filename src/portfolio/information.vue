@@ -8,9 +8,9 @@
         data-aos-duration="800"
         data-aos-delay="200"
         data-aos-once="true">
-        /the <span class="common-red">noblest</span> pleasure is the joy of understanding
+        / "the <span class="common-red">noblest</span> pleasure is the joy of understanding"
         </p>
-        <p class="portfolio-information__biographydesc">Hi, my name is Yohei. Based in Tokyo, Japan. Currently working as a frontend engineer at Rakuten. Avid lover of well-crafted minimalism.<br>(Edel Ritter = german for noble knights)</p>
+        <p class="portfolio-information__biographydesc">Based in Tokyo, Japan. Currently working as a frontend engineer at Rakuten. Avid lover of well-crafted minimalism.<br>(Edel Ritter = german for noble knights)</p>
         <div class="portfolio-information__info">
           <p class="common-red common-size--mid">/ loves</p>
           <p class="portfolio-information__biography-txt">| SOUND : Daft Punk, BT, J.A.M, Jazzanova, Hybrid, Hamauzu Masashi, Quasimode, nujabes, nomak, Danger, Carpenter Brut, Siamés, eli noir, Galdive, Thomas J. Bergersen, Caravan Palace, etc. Currently in love with lo-fi music and good mash-ups

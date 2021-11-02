@@ -5,6 +5,9 @@
         <h2>These are my <span>projects</span>
           <p>/ developer / designer</p>
         </h2>
+        <div class="portfolio-project-hero">
+          <p><img src="./assets/img/demo_design.png"></p>
+        </div>
       </div>
       <div class="portfolio-project__one">
         <div class="portfolio-parallax-wrap">
