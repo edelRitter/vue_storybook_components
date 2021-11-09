@@ -6,16 +6,20 @@
       </video>
     </div>
     <div
-      class="portfolio-caption common-text__title"
+      class="common-text__title portfolio-caption"
       data-aos="fade-right"
       data-aos-duration="800"
       data-aos-delay="2400"
       data-aos-once="true">
-        <span>/ welcome </span>
-        <span>/ to </span>
-        <span>/ the /</span><br>
-        <span>/ ROUND </span>
-        <span>/ TABLE /</span>
+        <p>
+          <span>/ welcome </span>
+          <spasn>/ to </spasn>
+          <span>/ the /</span>
+        </p>
+        <p class="common-text--right">
+          <span class="common-red">/ ROUND </span>
+          <span class="common-red">/ TABLE /</span>
+        </p>
       </div>
       <div class="portfolio-logo"></div>
   </section>

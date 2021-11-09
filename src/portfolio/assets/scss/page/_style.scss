@@ -1,15 +1,18 @@
-.common-red {
-  color:$color-red;
+.common-text--right {
+  text-align: right;
 }
 
 #main-title {
   position: relative;
-  overflow: hidden;
 
   & .portfolio-hero {
     position: relative;
     width: 100%;
-    min-height: 75vh;
+    height: 75vh;
+
+    @media #{$small-and-up} {
+      height: 100vh;
+    }
 
     & video {
       position: absolute;
@@ -25,39 +28,36 @@
     position: absolute;
     box-sizing: border-box;
     top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     transform: translateY(-50%);
-    width: 50%;
+    width: 75%;
     padding: 16px;
     font-size: 7vw;
+    font-family: "Playfair Display", serif;
     color: $color-black;
-    font-family: 'Playfair Display', serif;
-    background: rgb(255, 255, 255, 0.5);
+    background: $color-white;
     z-index: 1;
 
     @media #{$small-and-up} {
-      width: 75%;
-      font-size: 52px;
+      width: 500px;
+      font-size: 48px;
     }
   }
 
   & .portfolio-logo {
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     right: 0;
     left: 0;
     margin: 0 auto;
-    width: 50%;
-    height: 12vh;
+    width: 75%;
+    height: 20vh;
     background: url('./src/portfolio/assets/img/logo_design_black.png') no-repeat;
     background-size: contain;
     background-position: center center;
     z-index: 2;
-
-    @media #{$small-and-up} {
-      height: 50vh;
-      width: 25%;
-    }
   }
 }
 
@@ -187,7 +187,8 @@
       margin: 0 auto;
       left: 0;
       right: 0;
-      bottom: -7%;
+      bottom: 0;
+      transform: translateY(50%);
       letter-spacing: 0.2em;
       font-size: 5vw;
       font-family: "Playfair Display", serif;
@@ -218,11 +219,13 @@
       position: relative;
       box-sizing: border-box;
       width: 100%;
-      padding: 10%;
+      margin: 0 auto;
+      padding: 80px 10%;
       z-index: 1;
 
       @media #{$small-and-up} {
-        padding: 32px;
+        width: 50%;
+        padding: 80px 0;
       }
 
       & img {
