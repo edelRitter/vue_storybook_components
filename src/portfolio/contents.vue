@@ -16,7 +16,7 @@
               / 2021
             </div>
             <div id="portfolio-parallax2" class="portfolio-parallax-post">
-              / TEAM LABO PHOTOGRAPHY
+              / teamLab PHOTOGRAPHY
             </div>
           </div>
         </div>
@@ -52,8 +52,11 @@
         </swiper>
 
         <div class="portfolio-project__desc">
-          <p class="portfolio-project__desc-ttl">This is a set of photgraphy taken by me at test</p>
-          <p></p>
+          <p class="portfolio-project__desc-ttl">This is a set of photgraphy taken by me at teamLab</p>
+          <div class="portfolio-project__desc-text">
+            <p>studio open</p>
+            <p>2018.6.21 (木) - 2022.8.31 (水)</p>
+          </div>
         </div>
 
       </div>
